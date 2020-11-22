@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="tinycolorpicker.css" type="text/css" media="screen"/>
+
+    <title>LIFX Dashboard</title>
+    <style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.title {
+  padding-left: 20px;
+}
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered_menu {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="split left">
+    <h1 class="title">LIFX Dashboard</h1>
+
+    <div id="colorPicker">
+        <a class="color"><div class="colorInner"></div></a>
+        <div class="track"></div>
+        <ul class="dropdown"><li></li></ul>
+        <input type="hidden" class="colorInput"/>
+
+    </div>
+
+</div>
+<div class="split right">
+    <div class="centered_menu">
+        <button class="two"><h3>Wave effect</h3></button>
+        <button class="three"><h3>Pulse effect</h3></button>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="jquery.tinycolorpicker.min.js"></script>
+<script type="text/javascript" src="dashboard.js"></script>
+</html>
